@@ -20,9 +20,11 @@ const IconRender: React.FC<Props> = (props: Props) => {
 
     const icon = React.createElement(IconLib[iconName]);
 
+    console.log(iconName, iconConfig);
+
     return (
         <IconContext.Provider value={iconConfig}>
-            <div style={{ color: 'purple' }}>{icon}</div>
+            <div>{icon}</div>
         </IconContext.Provider>
     );
 };

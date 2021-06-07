@@ -54,4 +54,10 @@
             color: $strongRed;
         }
     }
+
+    & .emptyGoBackSection {
+        display: flex;
+        flex: 1;
+        background-color: $white;
+    }
 }

@@ -1,0 +1,8 @@
+@import '../../general.scss';
+
+.platformScreen {
+    display: flex;
+    flex-direction: column;
+    padding-top: $d-16;
+    align-items: center;
+}

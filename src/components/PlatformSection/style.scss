@@ -1,0 +1,13 @@
+@import '../../general.scss';
+
+.platformSection {
+    display: flex;
+    flex: 1;
+    & .optionsRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75vw;
+        height: 11rem;
+    }
+}

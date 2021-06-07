@@ -4,6 +4,8 @@ export interface Platform {
     descricao: string;
 }
 
-export interface PlatformRequest {
+export interface PlatformResponse {
     plataformas: Platform[];
 }
+
+export type PlatformType = 'TBT01' | 'CPT02' | 'WF03';

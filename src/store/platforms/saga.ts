@@ -2,12 +2,12 @@ import { call, put } from 'redux-saga/effects';
 import Constants from '../../Constants';
 import { platformsFailure, platformsSuccess } from './actions';
 import api from '../../services/api';
-import { PlatformRequest } from '../../models/Platform';
+import { PlatformResponse } from '../../models/Platform';
 
-export function* platformRequest() {
+export function* platformsRequest() {
     try {
         const { data } = yield call(api.get, Constants.PLATFORMS);
-        yield put(platformsSuccess(data as PlatformRequest));
+        yield put(platformsSuccess(data as PlatformResponse));
     } catch (err) {
         yield put(platformsFailure());
     }

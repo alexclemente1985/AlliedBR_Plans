@@ -3,9 +3,11 @@ import { applyMiddleware, createStore, Store } from 'redux';
 import { PlatformState } from './platforms/types';
 import rootReducer from './rootReducer';
 import rootSaga from './rootSaga';
+import { PlanState } from './plans/types';
 
 export interface ApplicationState {
     platforms: PlatformState;
+    plans: PlanState;
 }
 const sagaMiddleware = createSagaMiddleware();
 

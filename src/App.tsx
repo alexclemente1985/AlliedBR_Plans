@@ -5,12 +5,16 @@ import store from './store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomeScreen from './screens/Home';
 import AboutScreen from './screens/About';
+import PlansScreen from './screens/Plans';
 
 const App = () => (
     <Provider store={store}>
         <Router>
             <Header />
             <Switch>
+                <Route path={`/plans/:id`}>
+                    <PlansScreen />
+                </Route>
                 <Route path="/about">
                     <AboutScreen />
                 </Route>

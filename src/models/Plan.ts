@@ -13,6 +13,11 @@ export interface Plan {
     aparelho?: Device;
 }
 
-export interface PlanRequest {
+export interface PlanResponse {
     planos: Plan[];
+}
+
+export interface PlanRequest {
+    id: string;
+    //type: string;
 }

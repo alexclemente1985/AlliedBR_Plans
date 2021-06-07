@@ -1,7 +1,7 @@
 import { action } from 'typesafe-actions';
-import { PlanRequest } from '../../models/Plan';
+import { PlanResponse } from '../../models/Plan';
 import { PlanTypes } from './types';
 
-export const planRequest = () => action(PlanTypes.PLAN_REQUEST);
-export const planSuccess = (data: PlanRequest) => action(PlanTypes.PLAN_SUCCESS, data.planos);
+export const planRequest = (id: string) => action(PlanTypes.PLAN_REQUEST, id);
+export const planSuccess = (data: PlanResponse) => action(PlanTypes.PLAN_SUCCESS, data.planos);
 export const planFailure = () => action(PlanTypes.PLAN_FAILURE);

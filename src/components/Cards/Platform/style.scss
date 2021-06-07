@@ -1,1 +1,51 @@
 @import '../../../general.scss';
+
+.platformCard {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 18rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $d-16;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px $gray71;
+    background-color: $white;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    & .cardHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & .platformCardIcon {
+            color: $strongRed;
+            margin-right: $d-8;
+        }
+
+        & .cardTitle {
+            font-family: $Exo2SemiBold;
+            font-size: $font-24;
+            color: $gray30;
+        }
+    }
+
+    & .cardDescription {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        margin-bottom: $d-8;
+        align-items: center;
+        & .description {
+            font-family: $Exo2Light;
+            font-size: $font-20;
+            line-height: $d-16;
+            margin-top: $d-8;
+            color: $gray30;
+        }
+    }
+}
