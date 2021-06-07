@@ -1,8 +1,20 @@
 @import '../../general.scss';
 
-.platformScreen {
+.planScreen {
     display: flex;
-    flex-direction: column;
+
     padding-top: $d-16;
-    align-items: center;
+
+    justify-content: center;
+
+    & .plansSection {
+        background-color: chocolate;
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 45vw;
+    }
 }

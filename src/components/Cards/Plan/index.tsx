@@ -1,10 +1,9 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import './style.scss';
 
 const PlanCard: React.FC = () => {
     return (
-        <div>
+        <div className="planCard">
             <h1>PlanCard</h1>
         </div>
     );
