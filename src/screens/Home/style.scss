@@ -1,0 +1,16 @@
+@import '../../general.scss';
+
+.home {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    padding-top: $d-16;
+    align-items: center;
+
+    & .homeTitle {
+        font-size: $d-32;
+        color: $eerieBlack;
+        font-family: $Exo2SemiBold;
+        margin-bottom: $d-32;
+    }
+}

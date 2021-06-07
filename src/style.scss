@@ -1,0 +1,8 @@
+@import './styles/reset.scss';
+@import './general.scss';
+
+body {
+    font-family: $Exo2Regular, sans-serif;
+    padding-left: $d-24;
+    padding-right: $d-24;
+}

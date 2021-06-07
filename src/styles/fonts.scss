@@ -1,0 +1,43 @@
+//Fonts
+
+@font-face {
+    font-family: 'Exo2Light';
+    src: local('Exo2Light'), url('../public/fonts/Exo2/Exo2-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Exo2Regular';
+    src: local('Exo2Regular'), url('../public/fonts/Exo2/Exo2-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Exo2SemiBold';
+    src: local('Exo2SemiBold'), url('../public/fonts/Exo2/Exo2-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Exo2Bold';
+    src: local('Exo2Bold'), url('../public/fonts/Exo2/Exo2-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src: local('Staatliches'), url('../public/fonts/Staatliches/Staatliches-Regular.ttf') format('truetype');
+}
+
+//Font sizes
+
+$font-12: 0.75rem;
+$font-16: 1rem;
+$font-20: 1.25rem;
+$font-24: 1.5rem;
+$font-28: 1.75rem;
+$font-32: 2rem;
+$font-36: 2.25rem;
+
+//Font names
+
+$Exo2Light: 'Exo2Light';
+$Exo2Regular: 'Exo2Regular';
+$Exo2SemiBold: 'Exo2SemiBold';
+$Exo2Bold: 'Exo2Bold';
