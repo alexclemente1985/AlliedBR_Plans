@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Platform } from '../../models/Platform';
 import { ApplicationState } from '../../store';
 import { platformsRequest } from '../../store/platforms/actions';
-import PlatformCard from '../Cards/Platform';
+import PlatformCard from '../Cards/PlatformCard';
 import './style.scss';
 
 const PlatformSection: React.FC = () => {

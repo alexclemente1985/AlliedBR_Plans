@@ -17,7 +17,7 @@ const PlatformCard: React.FC<Props> = (props: Props) => {
 
     const iconConfig: IconConfig = {
         className: 'platformCardIcon',
-        size: '5rem',
+        size: '3rem',
     };
 
     const iconTypeHandler = (): string => {

@@ -1,4 +1,11 @@
 @import '../../general.scss';
+@import 'node_modules/slick-carousel/slick/slick';
 
-.planSection {
+.plansSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: $d-16;
+    padding-right: $d-16;
+    justify-content: center;
+    flex-direction: row;
 }

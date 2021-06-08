@@ -3,8 +3,12 @@
 .home {
     display: flex;
     flex-direction: column;
+
     padding-top: $d-16;
+    padding-left: $d-16;
+    padding-right: $d-16;
     align-items: center;
+    justify-content: center;
 
     & .homeTitle {
         font-size: $d-32;

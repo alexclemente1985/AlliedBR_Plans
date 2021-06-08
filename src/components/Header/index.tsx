@@ -22,7 +22,7 @@ const Header: React.FC = (props) => {
     };
 
     const goBackSectionHandler = () => {
-        if (location.pathname.match(Constants.routeNames.HOME)) {
+        if (location.pathname === Constants.routeNames.HOME) {
             return <div className="emptyGoBackSection" />;
         }
         return (

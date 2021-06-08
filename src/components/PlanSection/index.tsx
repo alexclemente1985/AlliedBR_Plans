@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Plan } from '../../models/Plan';
 import { ApplicationState } from '../../store';
-import PlanCard from '../Cards/Plan';
+import PlanCard from '../Cards/PlanCard';
 import './style.scss';
 
 const PlanSection: React.FC = () => {
@@ -10,7 +10,11 @@ const PlanSection: React.FC = () => {
         planList: state.plans.data,
     }));
 
-    return <div className="plansSection">{planList && planList.map((plan: Plan) => <PlanCard key={plan.sku} />)}</div>;
+    return (
+        <div className="plansSection">
+            {planList && planList.map((plan: Plan) => <PlanCard key={plan.sku} plan={plan} />)}
+        </div>
+    );
 };
 
 export default PlanSection;

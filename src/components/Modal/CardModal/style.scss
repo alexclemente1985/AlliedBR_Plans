@@ -1,0 +1,13 @@
+@import '../../../general.scss';
+
+.modal {
+    background-color: $gray71;
+    padding: $d-16;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px $gray71;
+    background-color: $white;
+}

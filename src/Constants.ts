@@ -25,6 +25,7 @@ export default {
         MD_TABLET_MAC: 'MdTabletMac',
         MD_WIFI: 'MdWifi',
         MD_COMPUTER: 'MdComputer',
+        MD_CLOSE: 'MdClose',
     },
     routeNames: {
         HOME: '/',

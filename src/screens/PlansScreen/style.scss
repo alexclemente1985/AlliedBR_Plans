@@ -1,0 +1,32 @@
+@import '../../general.scss';
+
+.planScreen {
+    display: flex;
+
+    padding-top: $d-16;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & .screenTitle {
+        margin-bottom: $d-24;
+        background-color: $white;
+        display: flex;
+        flex: 1;
+        position: sticky;
+        top: $d-24;
+    }
+
+    /* & .planSection {
+        background-color: chocolate;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 45vw;
+    } */
+}

@@ -3,9 +3,9 @@ import { Provider } from 'react-redux';
 import Header from './components/Header';
 import store from './store';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HomeScreen from './screens/Home';
-import AboutScreen from './screens/About';
-import PlansScreen from './screens/Plans';
+import HomeScreen from './screens/HomeScreen';
+import AboutScreen from './screens/AboutScreen';
+import PlansScreen from './screens/PlansScreen';
 
 const App = () => (
     <Provider store={store}>
