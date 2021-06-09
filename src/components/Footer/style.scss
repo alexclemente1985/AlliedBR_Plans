@@ -1,0 +1,44 @@
+@import '../../general.scss';
+
+.footer {
+    height: $d-40;
+    padding-bottom: $d-16;
+    bottom: 0;
+    position: fixed;
+    right: $d-32;
+    left: $d-32;
+    margin: 0 auto;
+    background-color: $white;
+
+    & .footerContent {
+        display: flex;
+        height: 100%;
+        background-color: $gray71;
+        padding-left: $d-32;
+        padding-right: $d-32;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom-left-radius: $d-8;
+        border-bottom-right-radius: $d-8;
+
+        & .footerInfo {
+            display: flex;
+            align-items: center;
+            font-family: $Exo2SemiBold;
+            font-size: $font-12;
+            color: $lividBrown;
+            text-align: left;
+        }
+
+        & .footerSocialNetworks {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & .footerLink {
+                color: $lividBrown;
+                margin-right: $d-16;
+            }
+        }
+    }
+}

@@ -7,23 +7,25 @@ export interface IconConfig {
     className: string;
 }
 
-interface Props {
+export interface IconType {
     iconLibrary: string;
     iconName: string;
     iconConfig: IconConfig;
 }
 
+interface Props {
+    configuration: IconType;
+}
+
 const IconRender: React.FC<Props> = (props: Props) => {
-    const { iconLibrary, iconName, iconConfig } = props;
+    const { configuration } = props;
 
-    const IconLib = require(`react-icons/${iconLibrary}`);
+    const IconLib = require(`react-icons/${configuration.iconLibrary}`);
 
-    const icon = React.createElement(IconLib[iconName]);
-
-    console.log(iconName, iconConfig);
+    const icon = React.createElement(IconLib[configuration.iconName]);
 
     return (
-        <IconContext.Provider value={iconConfig}>
+        <IconContext.Provider value={configuration.iconConfig}>
             <div>{icon}</div>
         </IconContext.Provider>
     );

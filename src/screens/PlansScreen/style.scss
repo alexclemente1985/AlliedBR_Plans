@@ -2,31 +2,22 @@
 
 .planScreen {
     display: flex;
-
     padding-top: $d-16;
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: $d-32;
+    padding-right: $d-32;
 
     & .screenTitle {
-        margin-bottom: $d-24;
         background-color: $white;
         display: flex;
         flex: 1;
         position: sticky;
         top: $d-24;
+        font-size: $d-32;
+        color: $eerieBlack;
+        font-family: $Exo2SemiBold;
+        margin-bottom: $d-32;
     }
-
-    /* & .planSection {
-        background-color: chocolate;
-        display: flex;
-        flex-direction: row;
-        flex: 1;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 45vw;
-    } */
 }

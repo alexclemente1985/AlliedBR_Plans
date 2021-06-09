@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Constants from '../../Constants';
+import { getIconConfiguration } from '../../utils/SupportFunctions';
 import IconRender, { IconConfig } from '../IconRender';
 import './style.scss';
 
@@ -18,9 +19,7 @@ const Modal: React.FC<Props> = (props: Props) => {
     };
 
     const handleOutsideClick = (e: any) => {
-        console.log('TARGET ID', e.target.id, 'ID props: ', id);
         if (e.target.id === id) {
-            console.log('TARGET: ', e.target);
             return onClose();
         }
     };
@@ -44,11 +43,7 @@ const Modal: React.FC<Props> = (props: Props) => {
             <div className="container">
                 <div className="closeButtonContainer">
                     <button onClick={() => onClose()}>
-                        <IconRender
-                            iconConfig={iconConfig}
-                            iconLibrary={Constants.iconLibraries.MATERIAL_DESIGN}
-                            iconName={Constants.icons.MD_CLOSE}
-                        />
+                        <IconRender configuration={getIconConfiguration(iconConfig, Constants.icons.MD_CLOSE)} />
                     </button>
                 </div>
                 <div className="content">{children}</div>

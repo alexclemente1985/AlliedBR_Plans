@@ -20,4 +20,14 @@
     &:hover {
         opacity: 0.6;
     }
+
+    & .planCardIcon {
+        color: $strongRed;
+    }
+
+    & .planCardTitle {
+        color: $lividBrown;
+        font-family: $Exo2SemiBold;
+        font-size: $font-20;
+    }
 }

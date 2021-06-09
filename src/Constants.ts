@@ -21,16 +21,24 @@ export default {
         MATERIAL_DESIGN: 'md',
     },
     icons: {
+        AI_FILL_GITHUB: 'AiFillGithub',
+        AI_LINKEDIN_OUTLINE: 'AiOutlineLinkedin',
         MD_CHEVRON_LEFT: 'MdChevronLeft',
         MD_TABLET_MAC: 'MdTabletMac',
         MD_WIFI: 'MdWifi',
         MD_COMPUTER: 'MdComputer',
         MD_CLOSE: 'MdClose',
+        MD_ERROR_OUTLINE: 'MdErrorOutline',
     },
     routeNames: {
         HOME: '/',
         ABOUT: '/about',
         PLANS: '/plans',
         PLAN_FORM: '/plan-form',
+    },
+    platforms: {
+        TABLET: 'Tablet',
+        COMPUTER: 'Computador',
+        WIFI: 'Wi-Fi',
     },
 };

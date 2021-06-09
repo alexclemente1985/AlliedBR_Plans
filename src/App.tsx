@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import PlansScreen from './screens/PlansScreen';
+import Footer from './components/Footer';
 
 const App = () => (
     <Provider store={store}>
@@ -22,6 +23,7 @@ const App = () => (
                     <HomeScreen />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     </Provider>
 );

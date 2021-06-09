@@ -13,18 +13,9 @@ const PlatformSection: React.FC = () => {
 
     const dispatch = useDispatch();
 
-    const cardClickHandler = () => {
-        console.log('clicou');
-    };
-
     useEffect(() => {
-        console.log('Iniciando o platform section...');
         dispatch(platformsRequest());
     }, []);
-
-    useEffect(() => {
-        console.log('PlatformSection: ', PlatformSection);
-    }, [PlatformSection]);
 
     return (
         <div className="platformSection">
@@ -35,7 +26,6 @@ const PlatformSection: React.FC = () => {
                             platformDescription={platform.descricao}
                             platformName={platform.nome}
                             platformType={platform.sku}
-                            cardClickHandler={cardClickHandler}
                         />
                     </li>
                 ))}

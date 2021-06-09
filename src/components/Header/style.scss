@@ -9,9 +9,10 @@
     flex: 1;
     height: $d-120;
     min-width: 20vw;
-
     background-color: $white;
     padding-top: $d-16;
+    padding-left: $d-32;
+    padding-right: $d-32;
 
     & .menu {
         display: flex;
@@ -20,6 +21,8 @@
         align-items: center;
         background-color: $eerieBlack;
         padding-left: $d-32;
+        border-top-left-radius: $d-8;
+        border-top-right-radius: $d-8;
 
         & .menuRow {
             display: flex;
@@ -27,7 +30,7 @@
 
             & .menuOption a {
                 font-family: $Exo2SemiBold;
-                font-size: $font-32;
+                font-size: $font-24;
                 margin-right: $d-24;
                 color: $white;
             }

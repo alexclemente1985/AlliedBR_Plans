@@ -1,0 +1,23 @@
+@import '../../../general.scss';
+
+.confirmationModal {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .confirmationModalTitle {
+        color: $lividBrown;
+        font-size: $font-28;
+        font-family: $Exo2SemiBold;
+        text-align: center;
+    }
+    & .confirmationModalContent {
+        color: $gray30;
+        font-size: $font-16;
+        font-family: $Exo2Regular;
+        margin-top: $d-32;
+        margin-bottom: $d-16;
+    }
+}

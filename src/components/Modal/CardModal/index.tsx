@@ -1,22 +1,48 @@
 import React from 'react';
-import Modal from '../index';
 import { Plan } from '../../../models/Plan';
 import './style.scss';
 
 interface Props {
-    openModal: boolean;
-    handleCloseModal: CallableFunction;
     plan: Plan;
-    children: JSX.Element;
+    handleHiringConfirmation: CallableFunction;
 }
 
 const CardModal: React.FC<Props> = (props: Props) => {
-    const { openModal, handleCloseModal, plan, children } = props;
+    const { plan, handleHiringConfirmation } = props;
     const { aparelho } = plan;
+
+    const handleButtonClick = () => {
+        handleHiringConfirmation();
+    };
     return (
-        <Modal id="modal" onClose={handleCloseModal}>
-            <h1>Eita</h1>
-        </Modal>
+        <div className="cardModal">
+            <h1 className="cardTitle">Franquia {plan.franquia}</h1>
+            <h2 className="cardPrice">R${plan.valor}</h2>
+
+            {aparelho && (
+                <ul className="cardModalValues">
+                    <li className="cardModalRow">
+                        <span className="highlight">Equipamento:</span> {aparelho.nome}
+                    </li>
+                    <li className="cardModalRow">
+                        <span className="highlight">Parcelamento:</span> {aparelho.numeroParcelas}
+                    </li>
+                    <li className="cardModalRow">
+                        <span className="highlight">Valor de cada parcela:</span> R${' '}
+                        {aparelho.valorParcela || aparelho.valor}
+                    </li>
+                    <li className="cardModalRow">
+                        <span className="highlight">Valor total:</span> R$ {aparelho.valor}
+                    </li>
+                </ul>
+            )}
+
+            <div className="cardModalFooter">
+                <button onClick={handleButtonClick} className="cardModalButton">
+                    Contratar o plano
+                </button>
+            </div>
+        </div>
     );
 };
 

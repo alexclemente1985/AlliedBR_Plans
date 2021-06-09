@@ -1,0 +1,97 @@
+@import '../../../general.scss';
+
+.formModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & .formModalMain {
+        display: flex;
+        flex-direction: row;
+
+        & .formModalHeader {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: $d-8;
+            & .formModalTitle {
+                font-family: $Exo2Bold;
+                font-size: $font-24;
+                color: $gray30;
+                text-align: center;
+            }
+            & .formModalSubtitle {
+                font-family: $Exo2SemiBold;
+                font-size: $font-20;
+                color: $lividBrown;
+                text-align: center;
+                margin-top: $d-8;
+            }
+        }
+        & .formModalContent {
+            display: flex;
+            flex: 2;
+            flex-direction: column;
+            margin-right: $d-8;
+
+            & .formModalRow {
+                display: flex;
+                flex-direction: row;
+                margin-top: $d-16;
+                align-items: center;
+
+                & .formModalInputLabel {
+                    flex: 1;
+                }
+                & .formModalInput {
+                    display: flex;
+                    flex: 2;
+                    background-color: $white;
+                    border-radius: 2px;
+                    box-shadow: 0px 0px 2px 0px $gray71;
+                    max-height: $d-24;
+                    cursor: text;
+                }
+
+                & .formError {
+                    box-shadow: 0px 0px 2px 0px $strongRed;
+                }
+            }
+        }
+    }
+    & .formModalFooter {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: $d-16;
+        flex: 1;
+        padding-right: $d-16;
+
+        & .formFooterContent {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            & .formInfo {
+                color: $gray71;
+                font-family: $Exo2SemiBold;
+                font-size: $font-12;
+            }
+
+            & .formModalSubmitButton {
+                color: $strongRed;
+                font-family: $Exo2SemiBold;
+                font-size: $font-20;
+            }
+            & .errorButton {
+                opacity: 0.7;
+            }
+        }
+    }
+    & .mandatory {
+        color: $strongRed;
+    }
+}

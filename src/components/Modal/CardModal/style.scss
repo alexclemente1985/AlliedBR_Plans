@@ -1,13 +1,45 @@
 @import '../../../general.scss';
 
-.modal {
-    background-color: $gray71;
-    padding: $d-16;
-    display: flex;
-    width: 200px;
-    height: 100px;
-    flex-direction: column;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px $gray71;
+.cardModal {
     background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .cardTitle {
+        font-family: $Exo2SemiBold;
+        font-size: $font-24;
+        color: $gray30;
+    }
+
+    & .cardPrice {
+        font-family: $Exo2Light;
+        font-size: $font-20;
+        color: $lividBrown;
+        margin-top: $d-16;
+    }
+
+    & .cardModalValues {
+        margin-top: $d-16;
+
+        & .cardModalRow {
+            margin-top: $d-8;
+            font-family: $Exo2Regular;
+
+            & .highlight {
+                font-family: $Exo2SemiBold;
+            }
+        }
+    }
+
+    & .cardModalFooter {
+        margin-top: $d-24;
+
+        & .cardModalButton {
+            color: $strongRed;
+            font-family: $Exo2SemiBold;
+            font-size: $font-20;
+        }
+    }
 }

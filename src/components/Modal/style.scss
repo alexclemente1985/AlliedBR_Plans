@@ -23,11 +23,12 @@
 
     & .container {
         background-color: $white;
-        width: 60%;
-        height: 60%;
+        min-width: 60%;
         z-index: 150;
         border-radius: 20px;
         padding: $d-16;
+        padding-bottom: $d-24;
+        width: min-content;
 
         & .closeButtonContainer {
             display: flex;
@@ -51,22 +52,6 @@
             border: none;
             position: relative;
             align-items: center;
-
-            &:before,
-            &:after {
-                content: ' ';
-                position: absolute;
-                width: 2.5px;
-                height: 24px;
-                background-color: $eerieBlack;
-            }
-
-            &:before {
-                transform: rotate(45deg);
-            }
-            &:after {
-                transform: rotate(-45deg);
-            }
         }
     }
 }

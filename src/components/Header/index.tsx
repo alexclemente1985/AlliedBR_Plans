@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import Constants from '../../Constants';
+import { getIconConfiguration } from '../../utils/SupportFunctions';
 import IconRender, { IconConfig } from '../IconRender';
 import './style.scss';
 
-const Header: React.FC = (props) => {
+const Header: React.FC = () => {
     const arrowBackConfig: IconConfig = {
         size: '2rem',
         className: 'arrowBack',
@@ -12,10 +13,6 @@ const Header: React.FC = (props) => {
 
     const location = useLocation();
     const history = useHistory();
-
-    useEffect(() => {
-        console.log('props: ', props, 'location: ', location.pathname);
-    }, []);
 
     const goBackClickHandler = () => {
         history.goBack();
@@ -27,11 +24,7 @@ const Header: React.FC = (props) => {
         }
         return (
             <button className="goBackSection" onClick={goBackClickHandler}>
-                <IconRender
-                    iconLibrary={Constants.iconLibraries.MATERIAL_DESIGN}
-                    iconName={Constants.icons.MD_CHEVRON_LEFT}
-                    iconConfig={arrowBackConfig}
-                />
+                <IconRender configuration={getIconConfiguration(arrowBackConfig, Constants.icons.MD_CHEVRON_LEFT)} />
                 <span className="arrowBackText">Voltar</span>
             </button>
         );

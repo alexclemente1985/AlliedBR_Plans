@@ -19,5 +19,4 @@ export interface PlanResponse {
 
 export interface PlanRequest {
     id: string;
-    //type: string;
 }

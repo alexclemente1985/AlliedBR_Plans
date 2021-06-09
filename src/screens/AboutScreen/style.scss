@@ -1,6 +1,6 @@
 @import '../../general.scss';
 
-.home {
+.aboutScreen {
     display: flex;
     flex-direction: column;
     padding-top: $d-16;
@@ -9,10 +9,16 @@
     padding-left: $d-32;
     padding-right: $d-32;
 
-    & .homeTitle {
+    & .screenTitle {
         font-size: $d-32;
         color: $eerieBlack;
         font-family: $Exo2SemiBold;
         margin-bottom: $d-32;
+    }
+
+    & .screenContent {
+        & .aboutProjectInfo {
+            margin-bottom: $d-24;
+        }
     }
 }
